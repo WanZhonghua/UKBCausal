@@ -1,5 +1,5 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '3'   # 注意这里是 CUDA_VISIBLE_DEVICES
+os.environ['CUDA_VISIBLE_DEVICES'] = '3'   
 
 import numpy as np
 import pandas as pd
@@ -47,9 +47,7 @@ class OrganDataset(Dataset):
         return self.X[idx]
 
 
-# =====================
-# Masked Autoencoder
-# =====================
+
 class MaskedAE(nn.Module):
     def __init__(self, input_dim, latent_dim=3, hidden_dim=64):
         super().__init__()
@@ -65,7 +63,6 @@ class MaskedAE(nn.Module):
         )
 
     def forward(self, x, mask):
-        # x: (B, D), mask: (B, D), 1=mask, 0=keep
         x_masked = x.clone()
         x_masked[mask.bool()] = 0.0
         inp = torch.cat([x_masked, mask], dim=-1)
