@@ -9,8 +9,8 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-DATA_DIR   = "/home/wzh/UKB-SJTU/preprocess/MAE-Train-Data"
-SAVE_DIR   = "/home/wzh/UKB-SJTU/preprocess/MAE-Weights"
+DATA_DIR   = "/path/to/your/MAE-Train-Data"
+SAVE_DIR   = "/path/to/your/MAE-Weights"
 
 BATCH_SIZE = 4090
 EPOCHS     = 100

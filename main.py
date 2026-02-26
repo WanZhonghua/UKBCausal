@@ -137,7 +137,7 @@ def preprocess_adj_new1(adj):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_dir', type=str, default= '/home/wzh/UKB-SJTU/Unified-Dimension/X_node_tensor.npy',help='data file name containing the discrete files.')
+parser.add_argument('--data_dir', type=str, default= '/path/to/your/node.npy',help='data file name containing the discrete files.')
 parser.add_argument('--data_variable_size', type=int, default=45,help='the number of variables in synthetic generated data')
 parser.add_argument('--x_dims', type=int, default=1,help='The number of input dimensions: default 1.')
 parser.add_argument('--z_dims', type=int, default=1,help='The number of latent variable dimensions: default the same as variable size.')

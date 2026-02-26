@@ -6,9 +6,9 @@ import matplotlib.cm as cm
 import matplotlib.colors as mcolors
 
 
-npy_path = "/home/wzh/UKB-SJTU/Code/exp2026-01-28T13:42:55.917494/predG.npy"
-idx_json_path = "/home/wzh/UKB-SJTU/JSON/all_nodes_index.json"
-abbr_json_path = "/home/wzh/UKB-SJTU/JSON/all_nodes_abbrev.json"
+npy_path = "/path/to/your/predG.npy"
+idx_json_path = "/path/to/your/node.json"
+abbr_json_path = "/path/to/your/node_abbrev.json"
 
 with open(idx_json_path, "r", encoding="utf-8") as f:
     name2idx = json.load(f)  

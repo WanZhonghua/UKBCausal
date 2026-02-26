@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
-DIR = "/home/wzh/UKB-SJTU/PCA_Selected_D/ori"
-OUTDIR = os.path.join("/home/wzh/UKB-SJTU/PCA_Selected_D/pca_reports")
+DIR = "/path/to/your/ori"
+OUTDIR = os.path.join("/path/to/your/pca_reports")
 os.makedirs(OUTDIR, exist_ok=True)
 
 K_MARK = 3
@@ -92,7 +92,7 @@ summary = pd.DataFrame(rows)
 if len(summary) > 0:
     summary = summary[["file", "k_80", "pa_k_95"]].sort_values(["pa_k_95", "k_80"])
 
-base='/home/wzh/UKB-SJTU/PCA_Selected_D'
+base='/path/to/your/PCA_Selected_D'
 out_csv = os.path.join(base, "pca_summary.csv")
 summary.to_csv(out_csv, index=False)
 

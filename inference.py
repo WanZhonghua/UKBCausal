@@ -9,10 +9,10 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 
-WEIGHT_DIR   = "/home/wzh/UKB-SJTU/preprocess/MAE-Weights"
-TRAIN_DIR    = "/home/wzh/UKB-SJTU/preprocess/MAE-Train-Data"
-DATA_DIR     = "/home/wzh/UKB-SJTU/preprocess/data_nodes/by_body-organ"
-SAVE_LATENT_DIR = "/home/wzh/UKB-SJTU/preprocess/Organ-Latent"
+WEIGHT_DIR   = "/path/to/your/MAE-Weights"
+TRAIN_DIR    = "/path/to/your/MAE-Train-Data"
+DATA_DIR     = "/path/to/your/by_body-organ"
+SAVE_LATENT_DIR = "/path/to/your/Organ-Latent"
 
 BATCH_SIZE   = 1024
 DEVICE       = "cuda" if torch.cuda.is_available() else "cpu"

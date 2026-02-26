@@ -7,9 +7,9 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 
-DIR = "/home/wzh/UKB-SJTU/PCA_Selected_D/ori"            
-SUMMARY_CSV = "/home/wzh/UKB-SJTU/PCA_Selected_D/pca_summary.csv"
-OUTDIR = "/home/wzh/UKB-SJTU/PCA_Selected_D/sum"
+DIR = "/path/to/your/ori"            
+SUMMARY_CSV = "/path/to/your/pca.csv"
+OUTDIR = "/path/to/your/sum"
 os.makedirs(OUTDIR, exist_ok=True)
 
 
